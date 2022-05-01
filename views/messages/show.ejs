@@ -1,21 +1,8 @@
-<%- include('header'); -%>
-
-    <form action="/" method="post" class="ui form">
-        <div class="field">
-            <label for="message">Message</label>
-            <textarea name="message" id="massage"></textarea>
-        </div>
-        <button type="submit" class="ui blue labeled submit con button">
-            <i class="icon edit"></i>
-            Envoyer
-        </button>
-    </form>
-
+<%- include('../pages/header'); -%>
     <div class='ui comments'>
         <h3 class='ui dividing header'>Commentaires</h3>
-        <% for (message of messages) { %>
             <div class="comment">
-                <a class="avatar" href="/message/<% message.id %>">
+                <a class="avatar" href="/message/<%= message.id %>">
                     <img src="https://randomuser.me/api/portraits/lego/7.jpg">
                 </a>
                 <div class="content">
@@ -29,7 +16,5 @@
                     </div>
                 </div>
             </div>
-       <% } %>
     </div>
-
-    <%- include('footer'); -%>
+    <%- include('../pages/footer'); -%>
