@@ -1,3 +1,8 @@
+Hello,
+This project will explain how to properly use Node Express.js
+by a form example.
+Have a fun!
+
 1) To install the project you just have to run "npm i"
 2) To run the app "npm run start"
 3) Install a db server (MySQL, PostgreSQL, MariaDB...) and replace the parameters
